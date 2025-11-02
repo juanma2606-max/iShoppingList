@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#673AB7"
+            android:gravity="center"
+            android:text="Lista de Productos Pendientes"
+            android:textColor="#EFEAEA"
+            android:textSize="30sp"
+            />
+
+        <Spinner
+            android:id="@+id/s"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:prompt="@string/spinner"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Añadir"
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="264dp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volver"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="332dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
